@@ -18,4 +18,5 @@ cat /etc/hosts | while read -r line; do
         ip=$(echo $line | awk '{print $1}')
     host=$(echo $line | awk '{print $2}')
         validate_ip $host $ip 8.8.8.8
+        #test
 done
